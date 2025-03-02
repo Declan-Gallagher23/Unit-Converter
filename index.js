@@ -18,7 +18,6 @@ function convert() {
     let pound = inputValue/0.453592 
     length.innerText = `${inputValue} meters = ${feet} feet | ${inputValue} feet = ${meter.toFixed(3)} meters`
     volume.innerText = `${inputValue} liters = ${gallon.toFixed(3)} gallons | ${inputValue} gallons = ${litres.toFixed(3)} liters`
-    mass.innerText = `${inputValue} kilos = ${pound} pounds | ${inputValue.toFixed(3)} pounds = ${kilo.toFixed(3)} kilos`
-    inputValue.value = ""
-    
+    mass.innerText = `${inputValue} kilos = ${pound} pounds | ${inputValue} pounds = ${kilo.toFixed(3)} kilos`
+    document.getElementById("input-value").value = "";
 }
